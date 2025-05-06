@@ -1,0 +1,46 @@
+/*ID # */
+
+/*CLASES . */
+
+/*ESPECIFICOS TYPE[] */
+body{
+    background-color: gray;
+}
+
+@font-face {
+    font-family: "MontserratFuenteCustom"; /*nombre de la fuente*/
+    src: url(fonts/Montserrat/static/Montserrat-Regular.ttf ); /*ruta de la fuente*/
+}
+
+h1{
+    font-family: "Tagesschrift", system-ui;/*fuente de la familia Arial*/
+    font-size: 45px; /*tamaño de la fuente*/
+    font-style: italic; /*cursiva*/
+    text-transform: uppercase; /*mayúscula*/
+    /*colores*/
+
+    /*colores del sistema*/
+    color: Mediumpurple;
+
+    /*colores hexadecimales*/
+    color: #cccccc;
+
+    /*colores RGB*/
+    color: rgb(255, 225, 107);
+
+    /*colores RGBA*/
+    color: rgba(255, 225, 107);
+
+}
+
+h3{
+    font-family: MontserratFuenteCustom, "Comic Sans MS"; /*fuente de la familia Comic Sans MS*/
+    font-size:20px; /*tamaño de la fuente*/
+    font-weight: lighter; /*ligera*/
+}
+
+p{
+    font-family:sans-serif; /*fuente de la familia Impact*/
+    font-size: 15px; /*tamaño de la fuente*/
+    font-weight: bold; /*negrita*/
+}

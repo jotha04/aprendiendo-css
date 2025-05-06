@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 40px;
+}
+#cajas{
+max-width: 1280px; /* ancho maximo de 900px */
+border: 2px solid black; /* borde gris de 2px */
+}
+
+.caja{
+    display: block; /* mostrar como bloque */
+    width: 250px; /* 250px ancho */
+    height: 250px; /* 250px alto */
+    background-color: red; /* color de fondo rojo */
+    border: 10px solid blue; /* borde azul de 10px */
+    margin: 15px; /* margen de 15px */
+    margin-top: 50px; /* margen superior de 50px */
+    margin-bottom: 40px; /* margen inferior de 40px */
+    margin-left: 20px; /* margen izquierdo de 20px */
+    margin-right: 30px; /* margen derecho de 30px */
+    padding: 50px; /* relleno de 50px */
+    padding-bottom: 50px; /* relleno inferior de 50px */
+    float: left; /* Mover un elemento, flotarlo, hacia una direccion*/
+}
+
+.caja p{
+    font-weight: bold; /* texto en negrita */
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; /* tipo de letra */
+    line-height: 235px;
+}
+
+.clearfix{
+    float:none; /* quitar el flotado */
+    clear:both; /* limpiar ambos lados TODOS LOS FLOAT*/
+}

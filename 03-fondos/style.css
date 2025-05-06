@@ -1,0 +1,34 @@
+body{
+    background-color:gray;
+    background-image:url(img/patron1.jpg);
+   /* background-size:100%;  Ajusta el tamaño de la imagen de fondo */
+   /*  background-repeat:no-repeat; No repite la imagen de fondo */
+    background-attachment:fixed; /* La imagen de fondo no se mueve al hacer scroll */
+   /* background-position:center;  Centra la imagen de fondo */
+   color:black;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: justify; /* Justifica el texto */
+   text-indent: 15px; /* Sangría de 15px al inicio de cada párrafo */
+   /*word-spacing: 5px; Espacio entre palabras */
+   /*letter-spacing: 2px; Espacio entre letras */
+   /*line-height: 1.5; Espacio entre líneas */
+}
+
+/*para ids #*/
+#caja{
+    border: 5px solid black;
+    padding: 10 px;
+    background-color: rgb(43, 148, 209);
+    color:white;
+    text-align: center;
+    line-height: 40px; /* Espacio entre líneas */
+    text-transform: uppercase; /* Cambia el texto a mayúsculas */
+    text-decoration: underline; /* Subraya el texto */
+    vertical-align: top; /* Alinea el texto al principio de la caja */
+}
+
+h2{
+    color: red;
+    border: 5px solid black;
+    background-image:url(img/patron1.jpg);
+}
