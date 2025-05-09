@@ -1,0 +1,59 @@
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+ul li{
+    font-size: 20px;
+}
+ul li:first-child {
+   color:purple;
+   font-weight: bold;
+}
+ul li:nth-child(2) {
+    color:blue;
+    font-weight: bold;
+
+}
+ul li:last-child {
+    color:gray;
+    font-weight: bold;
+
+}
+
+ul li:hover {
+    color:rgb(255, 0, 255);
+    font-weight: bold;
+    cursor: pointer;
+ }
+ 
+ #mi-enlace{
+    font-size: 30px;
+    color:red;
+ }
+
+ #mi-enlace:link{
+    color:blue;
+ }
+
+ #mi-enlace:visited{
+    color:orange;
+ }
+
+#mi-enlace:hover{
+    color:green;
+    font-weight: bold;
+    text-shadow: 0px 2px 5px black;
+}
+
+#mi-enlace:active{
+    color:blue;
+}
+
+input[type="text"]{
+    margin-top:20px;
+    padding: 5px;  
+}
+
+input[type="text"]:focus{
+   border: 4px solid blue; 
+}

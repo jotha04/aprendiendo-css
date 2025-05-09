@@ -1,0 +1,425 @@
+
+/*fuentes*/
+
+@font-face {
+    font-family: "fjalla"; /*nombre de la fuente*/
+    src: url(fonts/FjallaOne-Regular.ttf ) format('truetype'); /*ruta de la fuente*/
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "nevis"; /*nombre de la fuente*/
+    src: url(fonts/nevis.eot); /*ruta de la fuente*/
+    src: url(fonts/nevis.eot?#iefix) format("embedded-opentype"),
+    url(fonts/nevis.woff) format("woff"),
+    url(fonts/nevis.ttf) format("truetype"),
+    url(fonts/nevis.svg) format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "icons"; /*nombre de la fuente*/
+    src: url(fonts/websymbols-regular-webfont.svg#WebSymbolsRegular) format('svg'), /*ruta de la fuente*/
+         url(fonts/websymbols-regular-webfont.eot);
+    src: url(fonts/websymbols-regular-webfont.eot) format("embedded-opentype"),
+    url(fonts/websymbols-regular-webfont.woff) format("woff"),
+    url(fonts/websymbols-regular-webfont.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*estilos generales*/
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url(../img/paven.png);
+}
+
+a{
+    color:#529125;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#285616;
+}
+
+.red{ 
+color:#9b2422 !important;
+}
+
+.blue{
+color: #0c73f2 !important;
+}
+
+.orange{
+ color: #d69d2a !important;
+}
+
+.icon{
+    font-family: icons;
+    float: left;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.clearfix{
+    float:none;
+    clear:both;
+}
+
+/*Formularios*/
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select{
+ border: 1px solid #c9c9c9;
+ box-shadow: 0px 0px 2px #cccc inset;
+ background: white;
+ padding: 1px;
+ padding-top: 2px;
+ padding-bottom: 2px;
+ color:gray;
+ transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus{
+    border: 1px solid #70b231;
+    color:black;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button{
+    display: block;
+    border-radius: 2px;
+    border:1px solid green;
+    width: 50px;
+    padding: 3px;
+    background-color: #70b231;
+    cursor:pointer;
+    color: white;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover{
+box-shadow: 0px 0px 2px gray;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active{
+box-shadow: 0px 0px 3px gray inset;
+text-shadow: 0px 0px 1px #ccc;
+}
+
+
+
+
+/*Cabecera*/
+#header{
+    min-width: 1024px;
+    width:100%;
+    height:250px;
+    margin: 0px auto;
+ }
+
+#header h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: "nevis";
+    letter-spacing: 4px;
+    margin-top: 10px;
+    text-shadow: 0px 2px 1px #333;
+    transition: all 300ms;
+}
+
+#header h1:hover{
+    text-shadow: 0px 2px 1px #333, 0px 0px 4px green;
+}
+ 
+#header a{
+    color: #70b231;
+    text-decoration: none;
+}
+
+#header #logotipo{
+    width: 770px;
+    padding: 20px;
+    margin: 0px auto;
+}
+
+#header #logotipo img{
+    display: block;
+    text-align: center;
+    margin:0px auto;
+    width: 140px; 
+}
+
+/*Barra de navegacion*/
+
+#nav{
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #333333;
+    color: white;
+    font-family: sans-serif, Helvetica, Arial;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#nav ul{
+    text-decoration: none;
+    margin: 0px auto;
+    list-style: none;
+    width: 1090px;
+}
+
+#nav > ul > li{
+    line-height: 40px;
+    
+    float: left;
+    border-right: 1px solid gray;
+    transition: all 200ms;
+}
+#nav > ul > li a{
+    display:block;
+    padding-left:20px;
+    padding-right:20px;
+    color:white;
+    text-decoration: none;
+}
+
+#nav > ul > li > a:first-child{
+    border-left: 1px solid gray;
+} 
+#nav > ul > li:hover{
+    background-color: #70b231;
+    box-shadow: 0px 0px 4px green inset; /*inset hace sombra interior*/
+}
+/*
+#nav ul li{
+    list-style: none; 
+    float: left;
+    border: 1px solid #cccc;
+
+]
+#nav ul li:hover{
+    background: greenyellow;
+    cursor: pointer;
+}
+#nav ul li a{
+    font-family: nevis;
+    display:block;
+    padding: 15px;
+    margin-left: 0;
+    color: white;
+}
+*/
+
+/*MENU DESPLEGABLE*/
+#nav > ul >li > ul {
+    display:none; /*Hace que no se muestre*/
+    position: absolute; /*Hace que nada lo mueva*/
+    width:160px; /*tamaño para que no ocupe media pantalla*/
+    box-shadow: 0px 2px 2px gray; /* Le mete sombras al bloque*/
+    z-index: 1; /*hace que se superponga a todo*/
+}
+
+#nav > ul > li:hover > ul {
+display:block; /*Hace que se active al poner el mouse sobre el LI*/
+}
+
+#nav > ul >li:hover > ul > li{
+ background-color: #f2f1f0;
+ border-bottom:1px solid #d6d6d6;
+ padding: 8px;
+ line-height: 25px;
+ font-size:13px;
+ transition: all 300ms;
+}
+
+#nav > ul >li:hover > ul > li > a{
+   color: #666666;
+
+   }
+
+#nav > ul >li:hover > ul > li:hover{
+    box-shadow: 0px 0px 6px #ccc inset;
+    background: #dfdfdf;
+}
+   
+/*Contenido*/
+#content{
+    font-family: sans-serif, Arial, Helvetica;
+    width: 1250px;
+    min-height: 1100px;
+    margin:0px auto
+}
+
+/*BARRA LATERAL*/
+#aside, #frase{
+    width: 200px;
+    margin: 30px;
+    float:left;
+    background-color: white;
+    border:1px solid #ccc;
+    box-shadow: 2px 2px 2px #ccc;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+#frase{
+    /*clear:both; hpta*/
+    width: 180px; /*Se puso asi porque el padding suma 20px, por lo que
+    el width debe ser de 20px menos*/
+    padding: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+#aside .widget{
+    display:block;
+    width: 180px;   
+    margin:5px auto;
+    padding:8px;
+    padding-left: 10px;
+    padding-right:10px;
+    font-size: 14px;
+    border-bottom: 1px dashed #333333;
+}
+
+#aside .widget:last-child{
+    margin-bottom: 20px;
+}
+
+#aside h3{
+    display: block;
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+    background-color: #f2f3f2 ;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+}
+
+#aside li {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    list-style: square;
+}
+
+/*Formularios barra lateral*/
+#aside div label,
+#aside div input[type="text"],
+#aside div input[type="email"],
+#aside div input[type="password"],
+#aside div a
+{
+  display:block;
+  width:95%;
+  margin-top:2px;
+  margin-bottom: 2px;
+}
+
+#aside div input[type="button"],
+#aside div input[type="submit"],
+#aside div button{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#aside input,
+#aside label{
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Secciones*/
+#sections{
+    float:right;
+    width: 75%;
+    font-family: sans-serif, Arial, Helvetica;
+    margin-right: 20px;
+}
+
+#sections .titulo{
+    font-family: fjalla;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top:20px;
+    margin-top: -20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+#sections section{
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color:#333333;  
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#sections .article{
+margin: 10px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+#sections .date{
+    color: gray;
+    font-size: 12px;
+}
+
+#sections .stickerOne,
+#sections .stickerTwo{
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0;
+}
+
+#sections .stickerTwo{
+    margin-left: 860px;
+}
+
+#history{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+/*Footer*/
+#footer{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #333333;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 1px gray;
+}

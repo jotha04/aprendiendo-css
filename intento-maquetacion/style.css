@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+}
+
+h2{
+    font-size:20px;
+}
+
+.formulario{
+    width: 120px;
+}
+
+#header{
+    font-family:  fjalla;
+    color: green;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 2px gray; /* sombra de 1px a la derecha y abajo*/
+}
+#logo{
+    width: 100px;
+    height: 100px;
+
+}
+@font-face {
+    font-family: "fjalla"; /*nombre de la fuente*/
+    src: url(fonts/FjallaOne-Regular.ttf ); /*ruta de la fuente*/
+}
+@font-face {
+    font-family: "nevis"; /*nombre de la fuente*/
+    src: url(fonts/nevis.ttf ); /*ruta de la fuente*/
+}
+
+
+#menu{
+    display: flex; /* Activa flexbox */
+    justify-content: center; 
+    align-items: center; /* Alinea verticalmente */
+    width: 100%;
+    margin: 0 auto;
+    background-color: #444;
+}
+
+#menu ul li{
+    list-style: none; /* Elimina los puntos de la lista */
+    float: left;
+    border: 1px solid #cccc;
+}
+#menu ul li:hover{
+    background: greenyellow;
+    cursor: pointer;
+}
+#menu ul li a{
+    font-family: nevis;
+    display:block;
+    padding: 15px;
+    margin-left: 0;
+    color: white;
+}
+
+
+.lateral, .lateral2{
+    width: 180px;
+    float: left;
+    margin: 30px;
+    background-color:white;
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:black;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.lateral2{
+
+    width:180px;
+    padding: 10px;
+}
+
+
+#noticias{
+    float: right;
+    width: 75%;
+}
+.lateral .caja h2{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cccc;
+    text-align: center;
+    text-shadow: 1px 1px 2px gray; /* sombra de 1px a la derecha y abajo*/
+}
+
+.lateral .caja2 h2{
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cccc;
+    text-align: center;
+    color:rgb(0, 102, 255);
+}
+
+.lateral .caja3 h2{
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cccc;
+    text-align: center;
+    color:rgb(161, 41, 67);
+}
+
+.lateral .caja4 h2{
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cccc;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-size: 19px;
+}
+
+.lateral .caja, .lateral .caja2, .lateral .caja3, .lateral .caja4{
+   border-bottom: 1px dashed #ccc; 
+}
+
+
+
+.lateral ul{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.caja2 .formulario, .caja3 .formulario {
+    margin-bottom: 15px;
+}
+
+
+
+.lateral .formulario{
+    text-align: center;
+}
+.lateral .formulario input[type="submit"]{
+    color:white;
+    background-color:#5C9F1D;
+    margin-top: 5px;
+    border-radius: 2px;
+    padding:5px;
+    border: 1px solid #346b00;
+    cursor: pointer;
+}
+
+.lateral .formulario input[type="submit"]:hover{
+    background-color:#346b00;
+    color: white;
+}
+
+.menu-lateral li a{
+    color:green;
+}
+
