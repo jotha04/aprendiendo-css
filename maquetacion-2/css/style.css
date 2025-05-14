@@ -705,6 +705,9 @@ footer a {
 #footer #browsers img {
   width: 45px;
 }
+#footer #browsers img:hover {
+  transform: scale(1.4, 1.4); 
+}
 /*Responsive*/
 
 
